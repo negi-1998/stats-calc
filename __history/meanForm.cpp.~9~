@@ -1,0 +1,147 @@
+//---------------------------------------------------------------------------
+
+#include <fmx.h>
+#pragma hdrstop
+
+#include "meanForm.h"
+#include <vector>
+#include <queue>
+#include <map>
+#include <cmath>
+#include <System.SysUtils.hpp>
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.fmx"
+TmymeanForm *mymeanForm;
+//---------------------------------------------------------------------------
+__fastcall TmymeanForm::TmymeanForm(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+
+std::vector<float> ungroupedData;
+
+//---------------------------------------------------------------------------
+void __fastcall TmymeanForm::ungroupedOKButtonClick(TObject *Sender)
+{
+	String AnsiData = ungroupedEdit->Text;
+	float floatData = StrToFloat(AnsiData);
+	ungroupedData.push_back(floatData);
+	ungroupedEdit->Text = "";
+}
+//---------------------------------------------------------------------------
+void __fastcall TmymeanForm::ungroupedCalcButtonClick(TObject *Sender)
+{
+	int totalUngroupedData = ungroupedData.size();
+	float sum=0;
+
+	for(int i=0; i<ungroupedData.size(); i++){
+		sum += ungroupedData[i];
+	}
+	float mean = sum/totalUngroupedData;
+
+	String formattedUngroupedOp = FormatFloat("0.000", mean);
+
+
+	ungroupedOpEdit->Text =   formattedUngroupedOp;
+	ungroupedData.clear();
+}
+//---------------------------------------------------------------------------
+
+std::map<std::string, std::vector<float>> orderedDataMap;
+bool dataInserted = false;
+std::vector<float> frequency;
+float startData, endData, rangeData, freqData;
+void __fastcall TmymeanForm::freqButtonClick(TObject *Sender)
+{
+
+	if(dataInserted==false){
+		/*orderedDataMap["initialData"].push_back(startData);
+		orderedDataMap["finalData"].push_back(endData);
+		orderedDataMap["range"].push_back(rangeData);
+		dataInserted=true;  */
+        String startEditString = startEdit->Text;
+		startData = StrToFloat(startEditString);
+
+		String endEditString = endEdit->Text;
+		endData = StrToFloat(endEditString);
+
+		String rangeEditString = rangeEdit->Text;
+		rangeData = StrToFloat(rangeEditString);
+
+		dataInserted = true;
+	}
+
+	String freqEditString = freqEdit->Text;
+	freqData = StrToFloat(freqEditString);
+
+	frequency.push_back(freqData);
+	freqEdit->Text="";
+}
+//---------------------------------------------------------------------------
+
+
+
+void __fastcall TmymeanForm::groupedCalcButtonClick(TObject *Sender)
+{
+	/*std::vector<float>& initialData = orderedDataMap["initialData"];
+	std::vector<float>& finalData = orderedDataMap["finalData"];  */
+
+   /*	if (initialData.size() != finalData.size()) {
+		errorLabel->Text = "Mismatched initial and final data sizes.";
+		return;
+	}  */
+
+   /*or (size_t i = 0; i < initialData.size(); ++i) {
+		if (initialData[0] >= finalData[0]) {
+			errorLabel->Text = "Starting data cannot be greater than or equal to end data. Enter data correctly.";
+			return;
+		}
+
+		if (std::fmod(finalData[i] - initialData[i], 10.0) != 0.0) {
+			errorLabel->Text = "Interval is not corresponding with given start and end data.";
+			return;
+	}
+
+		if((int)(finalData[0]-initialData[0])/StrToFloat(rangeEdit->Text) != frequency.size()){
+			errorLabel->Text = "No. are frequencies provided are incorrect";
+			return;
+		}
+
+		else{
+			float classStart = initialData[0];
+			float dataEnd = finalData[0];
+			float classMid, sum;
+			float classEnd = classStart;
+		}
+	}*/
+	if(startData > endData){
+		errorLabel->Text = "Starting data cannot be greater than or equal to end data. Enter data correctly.";
+		return;
+	}
+
+	if (std::fmod(endData - startData, rangeData) != 0.0) {
+		errorLabel->Text = "Interval is not corresponding with given start and end data.";
+		return;
+	}
+
+	if((int)(endData-startData)/rangeData != frequency.size()){
+		errorLabel->Text = "No. are frequencies provided are incorrect";
+		return;
+	}
+
+	float classStart = startData, classEnd = startData + rangeData, classMid;
+	int i=0, sum=0;
+	while(classEnd <= endData){
+		classMid = (classStart + classEnd)/2.0;
+		sum  += (classMid*frequency[i]);
+		i++;
+		classStart = classEnd;
+		classEnd = classStart + rangeData;
+	}
+
+	float ungroupedMean = sum/frequency.size();
+	String formattedGroupedOp = FormatFloat("0.000", ungroupedMean);
+	groupedOpEdit->Text =   formattedGroupedOp;
+}
+//---------------------------------------------------------------------------

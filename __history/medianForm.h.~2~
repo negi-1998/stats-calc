@@ -1,0 +1,33 @@
+//---------------------------------------------------------------------------
+
+#ifndef medianFormH
+#define medianFormH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <FMX.Controls.hpp>
+#include <FMX.Forms.hpp>
+#include <FMX.Controls.Presentation.hpp>
+#include <FMX.StdCtrls.hpp>
+#include <FMX.Types.hpp>
+#include <FMX.Edit.hpp>
+//---------------------------------------------------------------------------
+class TmymedianForm : public TForm
+{
+__published:	// IDE-managed Components
+	TLabel *Label1;
+	TLabel *Label2;
+	TEdit *ungroupedDataEdit;
+	TLabel *Label3;
+	TEdit *ungroupedOpEdit;
+	TButton *ungroupedOkButton;
+	TButton *ungroupedCalButton;
+	void __fastcall ungroupedOkButtonClick(TObject *Sender);
+	void __fastcall ungroupedCalButtonClick(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TmymedianForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TmymedianForm *mymedianForm;
+//---------------------------------------------------------------------------
+#endif

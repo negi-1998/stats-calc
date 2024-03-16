@@ -1,0 +1,207 @@
+object mymodeForm: TmymodeForm
+  Left = 0
+  Top = 0
+  Caption = 'MODE'
+  ClientHeight = 676
+  ClientWidth = 720
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 601.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      'If you have ungrouped data, use the below field to enter the dat' +
+      'a one at a time and press '#39'OK'#39'. If you are finished entering the' +
+      ' data, press '#39'CALCULATE'#39' to find the mode'
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 120.000000000000000000
+    Text = 'Enter data here:'
+    TabOrder = 1
+  end
+  object ungroupedDataEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 144.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label3: TLabel
+    Position.X = 360.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'OUTPUT'
+    TabOrder = 3
+  end
+  object ungroupedOpEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 464.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ungroupedOkButton: TButton
+    Position.X = 152.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'OK'
+    OnClick = ungroupedOkButtonClick
+  end
+  object ungroupedCalcButton: TButton
+    Position.X = 480.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'CALCULATE'
+    OnClick = ungroupedCalcButtonClick
+  end
+  object Label4: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 681.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      'If you have grouped data, you just need to enter the start of th' +
+      'e first range and end of the last range along with the range int' +
+      'erval. Eg. If you have the range 10-20, 20-30, 30-40, you need t' +
+      'o enter 10 for start of data, 40 for end of data and 10 as class' +
+      ' interval. Improper data will lead to an error as displayed in t' +
+      'he window.'
+    TabOrder = 7
+  end
+  object Label5: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 389.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Start of data'
+    TabOrder = 8
+    object Label7: TLabel
+      Position.Y = 64.000000000000000000
+      Text = 'Class Interval'
+      TabOrder = 4
+    end
+  end
+  object startEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 9
+    Position.X = 144.000000000000000000
+    Position.Y = 381.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label6: TLabel
+    Position.X = 360.000000000000000000
+    Position.Y = 389.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'End of data'
+    TabOrder = 10
+    object endEdit: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Position.X = 104.000000000000000000
+      Position.Y = -8.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object rangeEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 11
+    Position.X = 144.000000000000000000
+    Position.Y = 453.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label8: TLabel
+    Position.X = 359.000000000000000000
+    Position.Y = 453.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'OUTPUT'
+    TabOrder = 12
+  end
+  object groupedOpEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 13
+    Position.X = 464.000000000000000000
+    Position.Y = 453.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label9: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 528.000000000000000000
+    Size.Width = 377.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      'Enter the frequency of each range in order as they appear and pr' +
+      'ess OK after entering each frequency'
+    TabOrder = 14
+  end
+  object frequencyEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 15
+    Position.X = 464.000000000000000000
+    Position.Y = 528.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object groupedOkButton: TButton
+    Position.X = 617.000000000000000000
+    Position.Y = 528.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+    Text = 'OK'
+    OnClick = groupedOkButtonClick
+  end
+  object groupedCalcButton: TButton
+    Position.X = 208.000000000000000000
+    Position.Y = 608.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+    Text = 'CALCULATE'
+    OnClick = groupedCalcButtonClick
+  end
+  object errorLabel: TLabel
+    Position.X = 400.000000000000000000
+    Position.Y = 584.000000000000000000
+    Size.Width = 313.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 18
+  end
+end

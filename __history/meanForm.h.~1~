@@ -1,0 +1,20 @@
+//---------------------------------------------------------------------------
+
+#ifndef meanFormH
+#define meanFormH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <FMX.Controls.hpp>
+#include <FMX.Forms.hpp>
+//---------------------------------------------------------------------------
+class TmymeanForm : public TForm
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TmymeanForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TmymeanForm *mymeanForm;
+//---------------------------------------------------------------------------
+#endif

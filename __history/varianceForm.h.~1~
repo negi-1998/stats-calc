@@ -1,0 +1,20 @@
+//---------------------------------------------------------------------------
+
+#ifndef varianceFormH
+#define varianceFormH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <FMX.Controls.hpp>
+#include <FMX.Forms.hpp>
+//---------------------------------------------------------------------------
+class TmyvarianceForm : public TForm
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TmyvarianceForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TmyvarianceForm *myvarianceForm;
+//---------------------------------------------------------------------------
+#endif

@@ -1,0 +1,147 @@
+object myRegistrationForm: TmyRegistrationForm
+  Left = 0
+  Top = 0
+  Caption = 'Registration'
+  ClientHeight = 628
+  ClientWidth = 668
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 104.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'NAME'
+    TabOrder = 10
+  end
+  object nameEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 11
+    Position.X = 152.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 409.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label2: TLabel
+    Position.X = 152.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 321.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'COMPLETE YOUR REGISTRATION'
+    TabOrder = 12
+  end
+  object ageEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 9
+    Position.X = 152.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label4: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 104.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'EMAIL'
+    TabOrder = 7
+  end
+  object emailEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 8
+    Position.X = 152.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 409.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label5: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 112.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'AGE'
+    TabOrder = 0
+  end
+  object Label3: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 112.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'USERNAME'
+    TabOrder = 5
+  end
+  object usernameEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Position.X = 152.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 409.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label6: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 496.000000000000000000
+    Size.Width = 112.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Text = ' RETYPE PASSWORD'
+    TabOrder = 3
+  end
+  object retypePasswordEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 152.000000000000000000
+    Position.Y = 496.000000000000000000
+    Size.Width = 409.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object registrationButton: TButton
+    Position.X = 96.000000000000000000
+    Position.Y = 568.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = 'REGISTER'
+    OnClick = registrationButtonClick
+  end
+  object Label7: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 408.000000000000000000
+    Size.Width = 112.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Text = ' PASSWORD'
+    TabOrder = 1
+  end
+  object passwordEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 152.000000000000000000
+    Position.Y = 408.000000000000000000
+    Size.Width = 409.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object warningLabel: TLabel
+    Position.X = 368.000000000000000000
+    Position.Y = 568.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+  end
+end

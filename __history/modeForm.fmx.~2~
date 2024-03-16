@@ -1,0 +1,74 @@
+object mymodeForm: TmymodeForm
+  Left = 0
+  Top = 0
+  Caption = 'MODE'
+  ClientHeight = 480
+  ClientWidth = 732
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 601.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      'If you have ungrouped data, use the below field to enter the dat' +
+      'a one at a time and press '#39'OK'#39'. If you are finished entering the' +
+      ' data, press '#39'CALCULATE'#39' to find the mode'
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 120.000000000000000000
+    Text = 'Enter data here:'
+    TabOrder = 1
+  end
+  object ungroupedDataEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 144.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label3: TLabel
+    Position.X = 360.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'OUTPUT'
+    TabOrder = 3
+  end
+  object ungroupedOpEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 464.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ungroupedOkButton: TButton
+    Position.X = 152.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'OK'
+  end
+  object ungroupedCalcButton: TButton
+    Position.X = 480.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'CALCULATE'
+  end
+end

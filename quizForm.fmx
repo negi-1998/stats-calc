@@ -1,0 +1,87 @@
+object myQuizForm: TmyQuizForm
+  Left = 0
+  Top = 0
+  Caption = 'Quiz'
+  ClientHeight = 480
+  ClientWidth = 632
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 112.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 361.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'GEEKUIZ'
+    TabOrder = 0
+  end
+  object questionLabel: TLabel
+    Position.X = 56.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 505.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'questionLabel'
+    TabOrder = 1
+  end
+  object answer1Button: TRadioButton
+    Position.X = 56.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 104.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'answer1Button'
+    OnChange = answer1ButtonChange
+  end
+  object answer2Button: TRadioButton
+    Position.X = 56.000000000000000000
+    Position.Y = 224.000000000000000000
+    Size.Width = 128.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'answer2Button'
+    OnChange = answer2ButtonChange
+  end
+  object answer3Button: TRadioButton
+    Position.X = 56.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 112.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'answer3Button'
+    OnChange = answer3ButtonChange
+  end
+  object confirmButton: TButton
+    Position.X = 56.000000000000000000
+    Position.Y = 360.000000000000000000
+    Size.Width = 112.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'confirmButton'
+    OnClick = confirmButtonClick
+  end
+  object Label3: TLabel
+    Position.X = 472.000000000000000000
+    Position.Y = 104.000000000000000000
+    Text = 'Points: '
+    TabOrder = 6
+  end
+  object pointsLabel: TLabel
+    Position.X = 472.000000000000000000
+    Position.Y = 129.000000000000000000
+    Size.Width = 112.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    Text = '0'
+    TabOrder = 7
+  end
+end

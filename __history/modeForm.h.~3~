@@ -1,0 +1,31 @@
+//---------------------------------------------------------------------------
+
+#ifndef modeFormH
+#define modeFormH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <FMX.Controls.hpp>
+#include <FMX.Forms.hpp>
+#include <FMX.Controls.Presentation.hpp>
+#include <FMX.StdCtrls.hpp>
+#include <FMX.Types.hpp>
+#include <FMX.Edit.hpp>
+//---------------------------------------------------------------------------
+class TmymodeForm : public TForm
+{
+__published:	// IDE-managed Components
+	TLabel *Label1;
+	TLabel *Label2;
+	TEdit *ungroupedDataEdit;
+	TLabel *Label3;
+	TEdit *ungroupedOpEdit;
+	TButton *ungroupedOkButton;
+	TButton *ungroupedCalcButton;
+private:	// User declarations
+public:		// User declarations
+	__fastcall TmymodeForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TmymodeForm *mymodeForm;
+//---------------------------------------------------------------------------
+#endif

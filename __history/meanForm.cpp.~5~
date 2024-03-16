@@ -1,0 +1,46 @@
+//---------------------------------------------------------------------------
+
+#include <fmx.h>
+#pragma hdrstop
+
+#include "meanForm.h"
+#include <vector>
+#include <System.SysUtils.hpp>
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.fmx"
+TmymeanForm *mymeanForm;
+//---------------------------------------------------------------------------
+__fastcall TmymeanForm::TmymeanForm(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+
+std::vector<float> ungroupedData;
+
+//---------------------------------------------------------------------------
+void __fastcall TmymeanForm::ungroupedOKButtonClick(TObject *Sender)
+{
+	String AnsiData = ungroupedEdit->Text;
+	float floatData = StrToFloat(AnsiData);
+	ungroupedData.push_back(floatData);
+	ungroupedEdit->Text = "";
+}
+//---------------------------------------------------------------------------
+void __fastcall TmymeanForm::ungroupedCalcButtonClick(TObject *Sender)
+{
+	int totalUngroupedData = ungroupedData.size();
+	float sum=0;
+
+	for(int i=0; i<ungroupedData.size(); i++){
+		sum += ungroupedData[i];
+	}
+	float mean = sum/totalUngroupedData;
+
+	String formattedUngroupedOp = FormatFloat("0.000", mean);
+
+
+	ungroupedOpEdit->Text =   formattedUngroupedOp;
+	ungroupedData.clear();
+}
+//---------------------------------------------------------------------------

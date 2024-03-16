@@ -1,0 +1,20 @@
+//---------------------------------------------------------------------------
+
+#ifndef modeFormH
+#define modeFormH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <FMX.Controls.hpp>
+#include <FMX.Forms.hpp>
+//---------------------------------------------------------------------------
+class TmymodeForm : public TForm
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TmymodeForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TmymodeForm *mymodeForm;
+//---------------------------------------------------------------------------
+#endif

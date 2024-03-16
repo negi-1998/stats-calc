@@ -1,0 +1,85 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'STATS-CALC'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.Y = 8.000000000000000000
+    Size.Width = 632.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.FontColor = claBlue
+    TextSettings.HorzAlign = Center
+    Text = 'STATS-CALC'
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 585.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Choose the operation you want to perform :'
+    TabOrder = 1
+  end
+  object meanButton: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'MEAN'
+  end
+  object medianButton: TButton
+    Position.X = 240.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'MEDIAN'
+  end
+  object modeButton: TButton
+    Position.X = 456.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'MODE'
+  end
+  object stdDevButton: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'STD. DEVIATION'
+  end
+  object varianceButton: TButton
+    Position.X = 240.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'VARIANCE'
+  end
+  object Button6: TButton
+    Position.X = 456.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = 'Button6'
+  end
+end

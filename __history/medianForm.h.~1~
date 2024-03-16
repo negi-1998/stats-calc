@@ -1,0 +1,20 @@
+//---------------------------------------------------------------------------
+
+#ifndef medianFormH
+#define medianFormH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <FMX.Controls.hpp>
+#include <FMX.Forms.hpp>
+//---------------------------------------------------------------------------
+class TmymedianForm : public TForm
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TmymedianForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TmymedianForm *mymedianForm;
+//---------------------------------------------------------------------------
+#endif

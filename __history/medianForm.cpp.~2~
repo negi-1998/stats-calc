@@ -1,0 +1,49 @@
+//---------------------------------------------------------------------------
+
+#include <fmx.h>
+#include <vector>
+#pragma hdrstop
+
+#include "medianForm.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.fmx"
+TmymedianForm *mymedianForm;
+//---------------------------------------------------------------------------
+__fastcall TmymedianForm::TmymedianForm(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+std::vector<float> ungroupedData;
+void __fastcall TmymedianForm::ungroupedOkButtonClick(TObject *Sender)
+{
+	String AnsiData = ungroupedDataEdit->Text;
+	float floatData = StrToFloat(AnsiData);
+	ungroupedData.push_back(floatData);
+	ungroupedDataEdit->Text = "";
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TmymedianForm::ungroupedCalButtonClick(TObject *Sender)
+{
+	if(ungroupedData.size()==0){
+		ungroupedOpEdit->Text = "No input provided";
+		return;
+	}
+	else{
+		int size = ungroupedData.size();
+		if(size%2==1){
+			ungroupedOpEdit->Text = ungroupedData[(size/2)+1];
+			ungroupedData.clear();
+			return;
+		}
+		else if(size%2==0){
+			ungroupedOpEdit->Text = (ungroupedData[ungroupedData.size()/2] + ungroupedData[(size/2)+1])+2;
+            ungroupedData.clear();
+			return;
+		}
+	}
+}
+//---------------------------------------------------------------------------
+

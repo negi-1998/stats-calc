@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/09/10 21:29:22.000.409,=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2023/09/10 21:29:23.000.167,=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2023/09/10 21:33:00.000.039,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats-calcPCH1.h=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2023/09/10 21:33:00.000.055,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats-calc.cbproj=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2023/09/10 21:34:00.000.484,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\Unit1.fmx=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2023/09/10 21:34:00.000.484,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\Unit1.cpp=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2023/09/10 21:34:00.000.484,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\Unit1.h=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2023/09/10 21:50:26.000.021,=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>2023/09/10 21:50:58.000.938,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\meanForm.fmx=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit2.fmx</Transaction>
+    <Transaction>2023/09/10 21:50:58.000.938,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\meanForm.h=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit2.h</Transaction>
+    <Transaction>2023/09/10 21:50:58.000.938,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\meanForm.cpp=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>2023/09/10 21:51:16.000.936,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\mainForm.cpp=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\Unit1.cpp</Transaction>
+    <Transaction>2023/09/10 21:51:16.000.936,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\mainForm.h=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\Unit1.h</Transaction>
+    <Transaction>2023/09/10 21:51:16.000.936,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\mainForm.fmx=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\Unit1.fmx</Transaction>
+    <Transaction>2023/09/10 21:51:48.000.322,=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit3.cpp</Transaction>
+    <Transaction>2023/09/10 21:52:05.000.221,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\medianForm.cpp=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit3.cpp</Transaction>
+    <Transaction>2023/09/10 21:52:05.000.221,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\medianForm.h=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit3.h</Transaction>
+    <Transaction>2023/09/10 21:52:05.000.221,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\medianForm.fmx=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit3.fmx</Transaction>
+    <Transaction>2023/09/10 21:52:17.000.100,=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit4.cpp</Transaction>
+    <Transaction>2023/09/10 21:52:30.000.056,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\modeForm.h=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit4.h</Transaction>
+    <Transaction>2023/09/10 21:52:30.000.056,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\modeForm.fmx=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit4.fmx</Transaction>
+    <Transaction>2023/09/10 21:52:30.000.056,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\modeForm.cpp=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit4.cpp</Transaction>
+    <Transaction>2023/09/10 21:52:55.000.538,=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit5.cpp</Transaction>
+    <Transaction>2023/09/10 21:53:12.000.887,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stdDevForm.fmx=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit5.fmx</Transaction>
+    <Transaction>2023/09/10 21:53:12.000.887,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stdDevForm.cpp=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit5.cpp</Transaction>
+    <Transaction>2023/09/10 21:53:12.000.887,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stdDevForm.h=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit5.h</Transaction>
+    <Transaction>2023/09/10 21:53:39.000.084,=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit6.cpp</Transaction>
+    <Transaction>2023/09/10 21:53:52.000.414,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\varianceForm.h=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit6.h</Transaction>
+    <Transaction>2023/09/10 21:53:52.000.414,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\varianceForm.fmx=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit6.fmx</Transaction>
+    <Transaction>2023/09/10 21:53:52.000.414,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\varianceForm.cpp=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\Unit6.cpp</Transaction>
+    <Transaction>2023/09/10 22:00:10.000.398,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\varianceForm.h=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\varianceForm.h</Transaction>
+    <Transaction>2023/09/10 22:00:10.000.398,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\varianceForm.fmx=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\varianceForm.fmx</Transaction>
+    <Transaction>2023/09/10 22:00:10.000.398,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\varianceForm.cpp=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\varianceForm.cpp</Transaction>
+    <Transaction>2023/09/10 22:00:18.000.353,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\stdDevForm.fmx=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stdDevForm.fmx</Transaction>
+    <Transaction>2023/09/10 22:00:18.000.353,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\stdDevForm.h=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stdDevForm.h</Transaction>
+    <Transaction>2023/09/10 22:00:18.000.353,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\stdDevForm.cpp=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stdDevForm.cpp</Transaction>
+    <Transaction>2023/09/10 22:00:22.000.397,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\modeForm.fmx=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\modeForm.fmx</Transaction>
+    <Transaction>2023/09/10 22:00:22.000.397,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\modeForm.h=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\modeForm.h</Transaction>
+    <Transaction>2023/09/10 22:00:22.000.397,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\modeForm.cpp=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\modeForm.cpp</Transaction>
+    <Transaction>2023/09/10 22:00:25.000.290,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\medianForm.cpp=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\medianForm.cpp</Transaction>
+    <Transaction>2023/09/10 22:00:25.000.290,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\medianForm.h=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\medianForm.h</Transaction>
+    <Transaction>2023/09/10 22:00:25.000.290,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\medianForm.fmx=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\medianForm.fmx</Transaction>
+    <Transaction>2023/09/10 22:00:30.000.242,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\meanForm.h=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\meanForm.h</Transaction>
+    <Transaction>2023/09/10 22:00:30.000.242,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\meanForm.cpp=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\meanForm.cpp</Transaction>
+    <Transaction>2023/09/10 22:00:30.000.242,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\meanForm.fmx=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\meanForm.fmx</Transaction>
+    <Transaction>2023/09/11 02:12:36.000.318,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\stats-calcPCH2.h=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats-calcPCH1.h</Transaction>
+    <Transaction>2023/09/11 02:12:36.000.343,C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats_calc\stats-calc.cbproj=C:\Users\Lenovo\Documents\Embarcadero\Studio\Projects\stats-calc.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
